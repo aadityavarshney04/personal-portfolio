@@ -14,13 +14,14 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Education', href: '#education' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About', href: '/#about' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Education', href: '/#education' },
+    { name: 'Contact', href: '/#contact' },
   ];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +65,7 @@ const Header = () => {
       scrolled ? 'bg-black/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-white">
+        <Link to="/#home" className="text-2xl font-bold text-white">
           Aaditya<span className="text-amber-400">.</span>
         </Link>
 
