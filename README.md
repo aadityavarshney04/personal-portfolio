@@ -4,7 +4,7 @@ This is my personal portfolio website built using modern frontend technologies.
 It showcases my skills, projects, and experience as a Computer Science student.
 
 ## 🚀 Live Demo
-👉 https://<your-username>.github.io/<repo-name>/
+👉  https://aadityavarshney04.github.io/personal-portfolio/#/
 
 ---
 
