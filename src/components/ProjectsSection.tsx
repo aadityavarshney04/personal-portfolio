@@ -9,11 +9,27 @@ import { Carousel, CarouselContent, CarouselItem } from './ui/carousel';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Fraud Detection System",
+      description: "Developed a fraud detection system using XGBoost and Flask, enabling users to upload transaction data and detect fraudulent activity with performance metrics, optimized for imbalanced datasets",
+      tech: ["Python", "Scikit-learn", "XGBoost", "Flask", "HTML", "CSS", "Jinja2"],
+      date: "April 2026",
+      github: "https://github.com/aadityavarshney04/fraud-detection-system",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      title: "QuickShow",
+      description: "A full-stack MERN-based movie ticket booking platform with role-based authentication using Clerk. Implements show management, ticket booking, and admin dashboard features, with secure REST APIs and production deployment on Vercel.",
+      tech: ["MERN Stack", "Clerk Auth", "REST APIs", "Vercel"],
+      date: "March 2026",
+      github: "https://github.com/aadityavarshney04/QuickShow",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    },
+    {
       title: "Guessing Game",
       description: "A Python-based terminal game with six interactive mini-games in a single modular file. Focused on clean user input handling, replay logic, and difficulty settings to enhance gameplay.",
       tech: ["Python", "CLI", "random", "time modules"],
       date: "April 2024",
-      github: "https://github.com/Aadi-Varshney/Guessing-Game",
+      github: "https://github.com/aadityavarshney04/Mini-game",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -21,7 +37,7 @@ const ProjectsSection = () => {
       description: "A responsive portfolio website built with React, TypeScript, and Tailwind CSS to showcase projects and skills in an interactive format.",
       tech: ["React", "TypeScript", "Tailwind CSS"],
       date: "May 2025",
-      github: "https://github.com/Aadi-Varshney/carlos-portfolio-revival",
+      github: "https://github.com/aadityavarshney04/personal-portfolio",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     }
   ];
