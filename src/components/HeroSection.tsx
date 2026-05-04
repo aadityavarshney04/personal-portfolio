@@ -34,6 +34,20 @@ const HeroSection = () => {
     return () => clearTimeout(timer);
   }, [text, isDeleting, loopNum, fullPhrase, typingSpeed]);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      const yOffset = -80;
+      const y =
+        element.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   // Add scroll effect to make the background image dull
   useEffect(() => {
     const handleScroll = () => {
@@ -75,13 +89,19 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-black font-medium" asChild>
-                <a href="#contact">
-                  Contact Me <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+              <Button
+                className="bg-amber-400 hover:bg-amber-500 text-black font-medium"
+                onClick={() => scrollToSection("contact")}
+              >
+                Contact Me <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800 font-bold text-base shadow-lg bg-gray-900/60 border-2" asChild>
-                <a href="#projects">View Projects</a>
+
+              <Button
+                variant="outline"
+                className="border-gray-600 text-white hover:bg-gray-800 font-bold text-base shadow-lg bg-gray-900/60 border-2"
+                onClick={() => scrollToSection("projects")}
+              >
+                View Projects
               </Button>
             </div>
           </div>

@@ -17,16 +17,19 @@ const Header = () => {
   ];
 
   const scrollToSection = (id: string) => {
-    const element = document.querySelector(`#${id}`);
+    const element = document.getElementById(id);
 
     if (element) {
-      const yOffset = -80; // adjust based on your header height
+      const yOffset = -80;
       const y =
-        (element as HTMLElement).getBoundingClientRect().top +
+        element.getBoundingClientRect().top +
         window.pageYOffset +
         yOffset;
 
       window.scrollTo({ top: y, behavior: "smooth" });
+
+      // 🔥 update URL hash without reload
+      window.history.pushState(null, "", `#${id}`);
     }
 
     setMobileMenuOpen(false);
