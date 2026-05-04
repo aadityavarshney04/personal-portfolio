@@ -9,6 +9,22 @@ import { Carousel, CarouselContent, CarouselItem } from './ui/carousel';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Fraud Detection System",
+      description: "Developed a fraud detection system using XGBoost and Flask, enabling users to upload transaction data and detect fraudulent activity with performance metrics, optimized for imbalanced datasets",
+      tech: ["Python", "Scikit-learn", "XGBoost", "Flask", "HTML", "CSS", "Jinja2"],
+      date: "April 2026",
+      github: "https://github.com/aadityavarshney04/fraud-detection-system",
+      image: "https://i.postimg.cc/RJ1PbgpC/florian-olivo-4hb-J-eym-Z1o-unsplash.jpg"
+    },
+    {
+      title: "QuickShow",
+      description: "A full-stack MERN-based movie ticket booking platform with role-based authentication using Clerk. Implements show management, ticket booking, and admin dashboard features, with secure REST APIs and production deployment on Vercel.",
+      tech: ["MERN Stack", "Clerk Auth", "REST APIs", "Vercel"],
+      date: "March 2026",
+      github: "https://github.com/aadityavarshney04/QuickShow",
+      image: "https://i.postimg.cc/XBK2Ds1Y/ilya-pavlov-Oqtaf-YT5k-Tw-unsplash.jpg"
+    },
+    {
       title: "Guessing Game",
       description: "A Python-based terminal game with six interactive mini-games in a single modular file. Focused on clean user input handling, replay logic, and difficulty settings to enhance gameplay.",
       tech: ["Python", "CLI", "random", "time modules"],
