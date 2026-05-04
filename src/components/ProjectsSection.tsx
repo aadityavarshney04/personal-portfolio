@@ -29,7 +29,7 @@ const ProjectsSection = () => {
       description: "A Python-based terminal game with six interactive mini-games in a single modular file. Focused on clean user input handling, replay logic, and difficulty settings to enhance gameplay.",
       tech: ["Python", "CLI", "random", "time modules"],
       date: "April 2024",
-      github: "https://github.com/Aadi-Varshney/Guessing-Game",
+      github: "https://github.com/aadityavarshney04/Mini-game",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     },
     {
@@ -37,13 +37,13 @@ const ProjectsSection = () => {
       description: "A responsive portfolio website built with React, TypeScript, and Tailwind CSS to showcase projects and skills in an interactive format.",
       tech: ["React", "TypeScript", "Tailwind CSS"],
       date: "May 2025",
-      github: "https://github.com/Aadi-Varshney/carlos-portfolio-revival",
+      github: "https://github.com/aadityavarshney04/personal-portfolio",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 bg-black-900">
+    <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-2">My Projects</h2>

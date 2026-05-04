@@ -17,10 +17,18 @@ const Header = () => {
   ];
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+    const element = document.querySelector(`#${id}`);
+
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -80; // adjust based on your header height
+      const y =
+        (element as HTMLElement).getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
+
     setMobileMenuOpen(false);
   };
 
